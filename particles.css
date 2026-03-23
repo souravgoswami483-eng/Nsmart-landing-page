@@ -1,0 +1,17 @@
+/* ============================================================
+   PARTICLES (hero background dots)
+============================================================ */
+.hero-particles {
+    position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
+}
+.particle {
+    position: absolute; border-radius: 50%;
+    background: rgba(59,91,219,0.5);
+    animation: particleFloat linear infinite;
+}
+@keyframes particleFloat {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.5; }
+    100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+}
